@@ -1,1 +1,1 @@
-# funnel-search
+# Funnel Search
