@@ -15,7 +15,7 @@ You will need an Apache Server to view this project as it was coded using PHP.
 
 1. Clone this project on your machine
 2. Upload to the server
-3. Open in browser
+3. Open index.php in browser
 
 
 ## Contributor
