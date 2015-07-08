@@ -55,38 +55,26 @@ namespace lib {
          */
         public function GetPriceRange($styles_array = "", $types_array = "") {
 
-
         $price_range = 0;
         $prices_array = array();
 
             if ($styles_array != '') {
-
                 foreach($this->product_json as $obj){
-
-
                     if (in_array($obj["Style"], $styles_array)) {
                         array_push($prices_array, $obj["Price"]);
                     }
-
                 }
-
             } else if ($types_array != "") {
-
                 foreach($this->product_json as $obj){
-
-
                     if (in_array($obj["TypeID"], $types_array)) {
                         array_push($prices_array, $obj["Price"]);
                     }
-
                 }
-
             }
 
             $price_range = min($prices_array)." : ".max($prices_array);
 
             return $price_range;
-
         }
 
 
@@ -100,35 +88,23 @@ namespace lib {
          */
         public function GetCounterByFilter($styles_array = "", $types_array = "") {
 
-
             $products_array = array();
 
             if ($styles_array != '') {
-
                 foreach($this->product_json as $obj){
-
-
                     if (in_array($obj["Style"], $styles_array)) {
                         array_push($products_array, $obj["Price"]);
                     }
-
                 }
-
             } else if ($types_array != "") {
-
                 foreach($this->product_json as $obj){
-
-
                     if (in_array($obj["TypeID"], $types_array)) {
                         array_push($products_array, $obj["Price"]);
                     }
-
                 }
-
             }
 
             return sizeof($products_array);
-
         }
 
 
@@ -147,19 +123,13 @@ namespace lib {
             $products_array = array();
             $style_array = $styles;
             $type_array = $types;
-
             $price_min = $min;
             $price_max = $max;
 
-
-
             // Filter through results
             foreach($this->product_json as $obj){
-
                 //check the price before it gets pushed into the new array
-
                 if ($obj["Price"] >= $price_min && $obj["Price"] <= $price_max) {
-
                     if (isset($types) && $types != "") {
                         if (in_array($obj["TypeID"], $type_array)) {
                             array_push($products_array, array("ProductID" => $obj["ProductID"], "ProductName" => $obj["ProductName"], "Style" => $obj["Style"], "Type" => $obj["Type"], "Price" => $obj["Price"]));
@@ -169,15 +139,10 @@ namespace lib {
                             array_push($products_array, array("ProductID" => $obj["ProductID"], "ProductName" => $obj["ProductName"], "Style" => $obj["Style"], "Type" => $obj["Type"], "Price" => $obj["Price"]));
                         }
                     }
-
                 }
-
             }
 
-
-
             return sizeof($products_array);
-
         }
 
 
@@ -195,21 +160,15 @@ namespace lib {
             $style_array = $_REQUEST["ShoeStyle"];
             $type_array = $_REQUEST["ShoeType"];
             $price_range = $_REQUEST["amount"];
-
             //removes characters from string and split into min and max
             $price_array = explode(" - ", str_replace("R", "", $price_range));
             $price_min = $price_array[0];
             $price_max = $price_array[1];
 
-
-
             // Filter through results
             foreach($this->product_json as $obj){
-
                 //check the price before it gets pushed into the new array
-
                 if ($obj["Price"] >= $price_min && $obj["Price"] <= $price_max) {
-
                     if (isset($_REQUEST["ShoeType"])) {
                         if (in_array($obj["TypeID"], $type_array)) {
                             array_push($products_array, array("ProductID" => $obj["ProductID"], "ProductName" => $obj["ProductName"], "Style" => $obj["Style"], "Type" => $obj["Type"], "Price" => $obj["Price"]));
@@ -219,9 +178,7 @@ namespace lib {
                             array_push($products_array, array("ProductID" => $obj["ProductID"], "ProductName" => $obj["ProductName"], "Style" => $obj["Style"], "Type" => $obj["Type"], "Price" => $obj["Price"]));
                         }
                     }
-
                 }
-
             }
 
             $results_html = '';
@@ -229,9 +186,7 @@ namespace lib {
                 $results_html .= '<a href="#" class="list-group-item">'.$product["ProductID"].' '.$product["ProductName"].' ('.$product["Style"].' - '.$product["Type"].')<span>Price : R'.$product["Price"].'</span></a>';
             }
 
-
             // default if none was selected
-
             if (sizeof($products_array) < 1) {
                 foreach($this->product_json as $obj){
                     $results_html .= '<a href="#" class="list-group-item">'.$obj["ProductID"].' '.$obj["ProductName"].' ('.$obj["Style"].' - '.$obj["Type"].')<span>Price : R'.$obj["Price"].'</span></a>';
@@ -239,7 +194,6 @@ namespace lib {
             }
 
             echo $results_html;
-
         }
 
         /**
@@ -257,7 +211,5 @@ namespace lib {
                 return sizeof($this->product_json);
             }
         }
-
     }
-
 }
