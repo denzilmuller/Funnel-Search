@@ -13,7 +13,7 @@ You will need an Apache Server to view this project as it was coded using PHP.
 
 **Getting Started**
 
-1. Clone this project using : git clone https://github.com/denzilmuller/Funnel-Search.git
+1. Clone this project on your machine
 2. Upload to the server
 3. Open in browser
 
