@@ -1,0 +1,173 @@
+[{
+    "StyleID":"1",
+    "Style":"Comfort",
+    "TypeID":"1",
+    "Type":"Outdoor",
+    "ProductID" : "#1",
+    "ProductName" : "Product Title",
+    "Price" : "100"
+},
+    {
+        "StyleID":"1",
+        "Style":"Comfort",
+        "TypeID":"1",
+        "Type":"Outdoor",
+        "ProductID" : "#2",
+        "ProductName" : "Product Title",
+        "Price" : "60"
+    },
+    {
+        "StyleID":"1",
+        "Style":"Comfort",
+        "TypeID":"2",
+        "Type":"Indoor",
+        "ProductID" : "#3",
+        "ProductName" : "Product Title",
+        "Price" : "160"
+    },
+    {
+        "StyleID":"1",
+        "Style":"Comfort",
+        "TypeID":"3",
+        "Type":"Formal",
+        "ProductID" : "#4",
+        "ProductName" : "Product Title",
+        "Price" : "150"
+    },
+    {
+        "StyleID":"2",
+        "Style":"Slippers",
+        "TypeID":"4",
+        "Type":"Men",
+        "ProductID" : "#5",
+        "ProductName" : "Product Title",
+        "Price" : "60"
+    },
+    {
+        "StyleID":"2",
+        "Style":"Slippers",
+        "TypeID":"5",
+        "Type":"Women",
+        "ProductID" : "#6",
+        "ProductName" : "Product Title",
+        "Price" : "250"
+    },
+    {
+        "StyleID":"2",
+        "Style":"Slippers",
+        "TypeID":"6",
+        "Type":"Kids",
+        "ProductID" : "#7",
+        "ProductName" : "Product Title",
+        "Price" : "140"
+    },
+    {
+        "StyleID":"3",
+        "Style":"Sports",
+        "TypeID":"7",
+        "Type":"Track",
+        "ProductID" : "#8",
+        "ProductName" : "Product Title",
+        "Price" : "100"
+    },
+    {
+        "StyleID":"3",
+        "Style":"Sports",
+        "TypeID":"8",
+        "Type":"Running",
+        "ProductID" : "#9",
+        "ProductName" : "Product Title",
+        "Price" : "180"
+    },
+    {
+        "StyleID":"3",
+        "Style":"Sports",
+        "TypeID":"9",
+        "Type":"Soccer",
+        "ProductID" : "#10",
+        "ProductName" : "Product Title",
+        "Price" : "340"
+    },
+    {
+        "StyleID":"3",
+        "Style":"Sports",
+        "TypeID":"10",
+        "Type":"Hockey",
+        "ProductID" : "#11",
+        "ProductName" : "Product Title",
+        "Price" : "400"
+    },
+    {
+        "StyleID":"3",
+        "Style":"Sports",
+        "TypeID":"11",
+        "Type":"Tennis",
+        "ProductID" : "#12",
+        "ProductName" : "Product Title",
+        "Price" : "200"
+    },
+    {
+        "StyleID":"4",
+        "Style":"Flats",
+        "TypeID":"12",
+        "Type":"Men",
+        "ProductID" : "#13",
+        "ProductName" : "Product Title",
+        "Price" : "100"
+    },
+    {
+        "StyleID":"4",
+        "Style":"Flats",
+        "TypeID":"13",
+        "Type":"Women",
+        "ProductID" : "#14",
+        "ProductName" : "Product Title",
+        "Price" : "200"
+    },
+    {
+        "StyleID":"4",
+        "Style":"Flats",
+        "TypeID":"14",
+        "Type":"Kids",
+        "ProductID" : "#15",
+        "ProductName" : "Product Title",
+        "Price" : "400"
+    },
+    {
+        "StyleID":"5",
+        "Style":"Wedges",
+        "TypeID":"15",
+        "Type":"Formal",
+        "ProductID" : "#16",
+        "ProductName" : "Product Title",
+        "Price" : "100"
+    },
+    {
+        "StyleID":"5",
+        "Style":"Wedges",
+        "TypeID":"16",
+        "Type":"Casual",
+        "ProductID" : "#17",
+        "ProductName" : "Product Title",
+        "Price" : "150"
+    },
+    {
+        "StyleID":"6",
+        "Style":"Loafers",
+        "TypeID":"17",
+        "Type":"Formal",
+        "ProductID" : "#18",
+        "ProductName" : "Product Title",
+        "Price" : "120"
+    },
+    {
+        "StyleID":"6",
+        "Style":"Loafers",
+        "TypeID":"18",
+        "Type":"Casual",
+        "ProductID" : "#19",
+        "ProductName" : "Product Title",
+        "Price" : "100"
+    }
+]
+
